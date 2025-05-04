@@ -1,0 +1,35 @@
+1. For Head Of Department(HOD):
+   
+2. For Staff:
+ 
+3. For Students:
+
+Tools and Technologies Used in the Project:
+1.	HTML
+2.	CSS
+3.	JAVASCRIPT
+4.	JQUERY
+5.	BOOTSTRAP
+6.	DJANGO
+
+Required Skillset to Build the Project:
+•	Basic knowledge of HTML, CSS, JavaScript, and Django.
+
+Step By Step Implementation
+Follow the below steps to implement the discussed project:
+
+Step 1: Install Django.
+
+Step 2: Create a folder with the name College_Management_System and open it with VS Code.
+
+Step 3: Open the terminal and create a new project “student_management_project” using the below command.
+django-admin startproject student_management_project
+
+Step 4: Enter inside the folder “student_management_project” and create the app “student_management_app”.
+python manage.py startapp student_management_app
+
+Step 5: Go to student_management_project -> settings.py -> INSTALLED_APPS and add our app ‘student_management_app’.
+ 
+ 
+Step 6: Go to urls.py of student_management_project and add the below path in urlpatterns. (Note – Import include as from django.urls import path, include)
+path('', include('student_management_app.urls'))
